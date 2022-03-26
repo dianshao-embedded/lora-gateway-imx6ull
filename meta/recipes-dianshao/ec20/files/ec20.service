@@ -1,0 +1,12 @@
+[Unit]
+Description=EC20 PPP
+
+[Service]
+WorkingDirectory=/usr/sbin
+ExecStart=/usr/sbin/pppd call 4g_provider
+SyslogIdentifier=ec20
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

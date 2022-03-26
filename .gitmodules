@@ -1,0 +1,28 @@
+[submodule "bitbake"]
+	path = bitbake
+	url = https://github.com/openembedded/bitbake.git
+	branch = 1.50
+[submodule "openembedded-core"]
+	path = openembedded-core
+	url = https://github.com/openembedded/openembedded-core.git
+	branch = hardknott
+[submodule "meta-yocto"]
+	path = meta-yocto
+	url = https://git.yoctoproject.org/meta-yocto.git
+	branch = hardknott
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
+	branch = hardknott
+[submodule "meta-rauc"]
+	path = meta-rauc
+	url = https://github.com/rauc/meta-rauc.git
+	branch = hardknott
+[submodule "meta-freescale"]
+	path = meta-freescale
+	url = https://github.com/Freescale/meta-freescale.git
+	branch = hardknott
+[submodule "meta-freescale-distro"]
+	path = meta-freescale-distro
+	url = https://github.com/Freescale/meta-freescale-distro.git
+	branch = hardknott

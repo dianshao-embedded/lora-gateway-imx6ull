@@ -1,0 +1,13 @@
+[Unit]
+Description=Lora Packet Forwarder
+
+[Service]
+User=root
+WorkingDirectory=/usr/libexec/lora/
+ExecStart=sh -c /usr/libexec/lora/start.sh
+SyslogIdentifier=packet-forwader
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
