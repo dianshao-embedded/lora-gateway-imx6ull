@@ -11,13 +11,13 @@ pipeline {
         
         stage('make env') {
             steps {
-                sh 'source oe-init-build-env'
+                bash -c 'source oe-init-build-env'
             }
         }
         
         stage('build image') {
             steps {
-                sh 'bitbake lora-gateway-image'
+                bash -c 'bitbake lora-gateway-image'
             }
         }
     }
