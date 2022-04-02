@@ -18,7 +18,7 @@ pipeline {
         
         stage('build image') {
             steps {
-                sh 'bash -c "bitbake lora-gateway-image"'
+                sh './bitbake/bin/bitbake lora-gateway-image"'
             }
         }
     }
