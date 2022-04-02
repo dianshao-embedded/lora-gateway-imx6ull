@@ -9,16 +9,10 @@ pipeline {
             }
         }
         
-        stage('make env') {
+        stage('build') {
             steps {
                 sh 'unset BBPATH'
-                sh 'bash -c "source oe-init-build-env"'
-            }
-        }
-        
-        stage('build image') {
-            steps {
-                sh './bitbake/bin/bitbake lora-gateway-image"'
+                sh 'bash -c "source oe-init-build-env; bitbake lora-gateway-image"'
             }
         }
     }
