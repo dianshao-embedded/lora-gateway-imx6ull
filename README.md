@@ -10,8 +10,8 @@
 *注意，确保你的宿主机可以编译 bitbake 项目，也可以使用 dianshao-yocto docker container*
 
 ```
-git module init
-git module update
+git submodule init
+git submodule update
 
 source oe-init-build-env
 bitbake lora-gateway-image
