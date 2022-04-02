@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('submodule update') {
             steps {
-                git submodule init
-                git submodule update
+                sh 'git submodule init'
+                sh 'git submodule update'
             }
         }
         
         stage('make env') {
             steps {
-                source oe-init-build-env
+                sh 'source oe-init-build-env'
             }
         }
         
         stage('build image') {
             steps {
-                bitbake lora-gateway-image
+                sh 'bitbake lora-gateway-image'
             }
         }
     }
